@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>
+        Object Identification
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <center>
+        <div id="container">
+            <h1 class="headings1">🤩OBJECT IDENTIFICATION🤩
+                <button data-toggle="modal" data-target="#p" id="pop"><i class="fa fa-list" aria-hidden="true"></i></button>
+            </h1>
+        </div>
+        <div class="b"><h2 class="c" id="status">Status</h2><h2 class="c" id="Object">No. of objects</h2></div>
+        <br>
+        <button id="start" onclick="start()">Start</button>
+        <button id="pause" onclick="vpause()">Pause</button>
+        <button id="stop" onclick="vstop()">Stop</button>
+    </center>
+    <div class="modal fade" id="p">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Cocco SSD</h1>
+                    <button class="close" data-dismiss="modal">❌</button>
+                </div>
+                <div class="modal-body">
+                    <img src="screenshot of cocossd.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
